@@ -31,13 +31,13 @@
 # print("전 게임을 통틀어 몇 번 만에 숫자를 맞추었는지 평균값은 ", sum(list)/len(list), "입니다.")
 
 
-def convert_to_fahrenheit(celsius):
-    a = ((celsius * 9/5) + 32)
-    return int(a)
+# def convert_to_fahrenheit(celsius):
+#     a = ((celsius * 9/5) + 32)
+#     return int(a)
 
 
-print("섭씨 온도(C)를 입력하세요 :")
-temperature = int(input())
+# print("섭씨 온도(C)를 입력하세요 :")
+# temperature = int(input())
 
-c = convert_to_fahrenheit(temperature)
-print("변화된 화씨(F) 온도 :", c)
+# c = convert_to_fahrenheit(temperature)
+# print("변화된 화씨(F) 온도 :", c)
