@@ -13,7 +13,7 @@ d = [10001] * (m + 1)
 
 # 다이나믹 프로그래밍(Dynamic Programming) 진행(보텀업)
 d[0] = 0
-
+# 근데 이거 뭔가 변경된거지
 money = [2, 3]
 
 for i in range(n):  # K 선택 money[i] -> K
