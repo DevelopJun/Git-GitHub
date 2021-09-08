@@ -9,8 +9,25 @@ git hub pull 내용 Vs code 에서 관리법 정리
 6. Push : git push origin master 
 7. 확인 
 
-# Git-Hub -git 협업 명령어 
-## 1. 중앙 원격 
+# Git-Hub -git 협업 명령어(복귀)
+## Feature Branch WorkFlow
+Feature Branch Workflow의 핵심 컨셉은 기능별 브랜치를 만들어서 작업하는 것이다. 
+다수의 팀 구성원이 메인 코드 베이스(master)를 중심으로 해서 안전하게 새로운 기능을 개발 할 수 있다. 
+-> 소규모 인원의 프로젝트 적합 
+
+### 1. 중앙 원격 저장소, 자신의 원격 저장소, 로컬 저장소의 개념 
+- 중앙 원격 저장소
+여러 명이 같은 프로젝틀을 관리하는 데 사용하는 그룹 계정의 중립된 원격 저장소 
+  Organiziaion을 만드는 방법은 github페이지 오른쪽 위에 있는 
+
+- 자신의 원격 저장소
+romote repository라고 부른다 
+파일이 github 전용 서버에서 관리되는 원격 저장소 
+
+- 로컬 저장소
+local reposiotory 라고 불린다
+내 PC에 파일이 저장되는 개인 전용 저장소, 지역 저장소 
+
 git clone [중앙 URL] -> local
 
 fetch와 pull의 차이 
@@ -19,7 +36,47 @@ pull: 원격 저장소의 내용을 가져와 자동으로 병합 작업을 실�
 즉, 단순히 원격 저장소의 내용을 확인만 하고 로컬 데이터와 병합은 하고 싶지 않은 경우
 fetch 
 
+
 git checkout -b [branch name]
 
-https://gmlwjd9405.github.io/2017/10/27/how-to-collaborate-on-GitHub-1.html
+위의 명령어는 아래의 두 명령어를 합한 것
+git branch [branch name]
+git checkout [branch name]
+
+git commit -a -m "Write commit message"
+
+위의 명령어는 아래의 두 명령어를 합한 것
+git add . # 변경된 모든 파일을 스테이징 영역에 추가
+git add [some-file] # 스테이징 영역에 some-file 추가
+git commit -m "Write commit message" # local 작업폴더에 history 하나를 쌓는 것
+
+
+- 커밋을 완료했다면, 내가 작업한 내용을 포함한 브랜치(feature/login branch)를 중앙 원격 저장소에 올린다.
+이는 로컬 저장소의 백업 역할을 할 뿐만 아니라, 다른 팀 구성원들이 나의 작업 내용과 진도를 확인할 수도 있어 좋은 습관이라 할 수 있다.
+
+- u 옵션: 새로운 기능 브랜치와 동일한 이름으로
+
+
+// 로컬의 기능 브랜치를 중앙 원격 저장소 (origin)에 올린다.
+git push -u origin feature/login branch
+
+// -u 옵션으로 한 번 연결한 후에는 옵션 없이 아래의 명령만으로 기능 브랜치를 올릴 수 있다.
+git push -origin feature/login branch
+
++풀 리퀘스트(Pull requests)란?
+기능 개발을 끝내고 master에 바로 병합(merge)하는 것이 아니라, 브랜치를 중앙 원격 저장소에 올리고 master에 병합(merge)해달라고 요청하는 것
+
+중앙 원격 저장소와 자신의 로컬 저장소를 동기화하기 위해 로컬 저장소의 branch를 master branch로 이동한다.
+// 로컬 저장소의 branch를 master branch로 이동
+$ git checkout master
+
+중앙 원격 저장소의 코드 베이스에 새로운 커밋이 있다면 다음과 같이 가져온다.
+중앙 원격 저장소(origin)의 메인 코드 베이스가 변경되었으므로, 프로젝트 참여하는 모든 개발자가 자신의 로컬 저장소를 동기화해서 최신 상태로 만들어야 한다.
+
+git pull origin master
+
+
+참고자료: https://gmlwjd9405.github.io/2017/10/27/how-to-collaborate-on-GitHub-1.html
+
+
 
