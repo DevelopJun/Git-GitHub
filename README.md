@@ -9,6 +9,8 @@ git hub pull 내용 Vs code 에서 관리법 정리
 6. Push : git push origin master 
 7. 확인 
 
+10. 제거: git remote remove origin
+
 - > 만약 fatal: not a git repository(or any of the parent directorties):.git 이라는 에러가 발생한다면,
 - > [원인] 현재 폴더에 git 에 대한 정보를 담은 파일이 없기 때문에 발생하는 에러.
 
