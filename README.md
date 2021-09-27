@@ -10,6 +10,8 @@ git hub pull 내용 Vs code 에서 관리법 정리
 7. 확인 
 
 10. 제거: git remote remove origin
+11. 폴더 이름 변경 : git mv [기본 폴더명] [변경할 폴더명]
+12. ![image](https://user-images.githubusercontent.com/63999666/134844430-0523f302-3643-4642-8cd1-35f34909a4f2.png)
 
 - > 만약 fatal: not a git repository(or any of the parent directorties):.git 이라는 에러가 발생한다면,
 - > [원인] 현재 폴더에 git 에 대한 정보를 담은 파일이 없기 때문에 발생하는 에러.
