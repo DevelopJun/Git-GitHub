@@ -9,12 +9,20 @@ git hub pull 내용 Vs code 에서 관리법 정리
 6. Push : git push origin master 
 7. 확인 
 
-10. 제거: git remote remove origin
-11. 폴더 이름 변경 : git mv [기본 폴더명] [변경할 폴더명]
-12. ![image](https://user-images.githubusercontent.com/63999666/134844430-0523f302-3643-4642-8cd1-35f34909a4f2.png)
+- > 제거: ****git remote remove origin****
+- > 폴더 이름 변경 : git mv [기본 폴더명] [변경할 폴더명]
+- > ![image](https://user-images.githubusercontent.com/63999666/134844430-0523f302-3643-4642-8cd1-35f34909a4f2.png)
 
-- > 만약 fatal: not a git repository(or any of the parent directorties):.git 이라는 에러가 발생한다면,
+**- > 만약 **error: failed to push some refs to 이라는 에러가 발생한다면****, 
+- > [원인] 이는 원격저장소(github)에 내 로컬(내컴퓨터)에는 없는 파일이 있을 때 내 파일을 push 할 면 발생하는 오류이다.
+이럴땐 원격저장소에서 내 로컬에 저장하지 않은 파일을 pull한 후 원격저장소에 다시 push를 해야한다.
+- [명령]  git pull {원격저장소별칭 보통 origin이라고 함} master
+- [명령] git push {원격저장소 별칭 보통 origin} master
+
+
+**- > **만약 fatal: not a git repository(or any of the parent directorties):.git 이라는 에러가 발생한다면,****
 - > [원인] 현재 폴더에 git 에 대한 정보를 담은 파일이 없기 때문에 발생하는 에러.
+- > 해결책 git init 으로 git 복원
 
 # Git-Hub -git 협업 명령어(복귀)
 ## Feature Branch WorkFlow
