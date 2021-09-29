@@ -13,7 +13,7 @@ git hub pull 내용 Vs code 에서 관리법 정리
 - > 폴더 이름 변경 : git mv [기본 폴더명] [변경할 폴더명]
 - > ![image](https://user-images.githubusercontent.com/63999666/134844430-0523f302-3643-4642-8cd1-35f34909a4f2.png)
 
-- > reset( git merge, commit) 되돌리기 -> soft, hard 방법으로 id 찾아서 되돌려야 한다. 
+#### reset( git merge, commit) 되돌리기 -> soft, hard 방법으로 id 찾아서 되돌려야 한다. 
 
 **- > 만약 **error: failed to push some refs to 이라는 에러가 발생한다면****, 
 - > [원인] 이는 원격저장소(github)에 내 로컬(내컴퓨터)에는 없는 파일이 있을 때 내 파일을 push 할 면 발생하는 오류이다.
