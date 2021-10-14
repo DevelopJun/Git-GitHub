@@ -1,5 +1,18 @@
 # Git-GitHub
-Organize what i have learned git, github
+
+
+![image](https://user-images.githubusercontent.com/63999666/137278060-27efc326-c699-462a-a3d9-d5903a399d5d.png)
+![image](https://user-images.githubusercontent.com/63999666/137278128-059d1a06-e359-4537-8b92-ad0e36d752bb.png)
+![image](https://user-images.githubusercontent.com/63999666/137278185-3529748f-984d-404d-842e-de4d2456e41a.png)
+
+이미지 출처 : https://velog.io/@delilah/GitHub-Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%AA%A8%EC%9D%8C
+
+<br/>
+<br/>
+
+
+# Organize what i have learned git, github
+
 git hub pull 내용 Vs code 에서 관리법 정리
 1. Initial Repository click, 로컬 Repository 관리 가능하게 된다. 
 2. Repository 주소 복사 후 
